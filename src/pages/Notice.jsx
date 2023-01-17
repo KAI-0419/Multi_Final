@@ -1,23 +1,24 @@
-import React from 'react'
-import HelpNav from '../components/HelpNav'
-import '../styles/notice.css'
+import React from 'react';
+import HelpNav from '../components/HelpNav';
+import '../styles/notice.css';
+import NoticeMain from './NoticeMain';
 
 function Notice() {
   return (
     <div className='Main'>
-        <HelpNav/>
+      <HelpNav />
       <div className='noticeMain'>
-        <div className='MainContainer'>
+        <div className='NoticeContainer'>
           <h5>공지사항</h5>
-          <div className='notice'>
-            <h5>공지 알립니다!</h5>
-            <div>2023.01.16</div>
-            <p>어쩌구 저쩌구</p>
-          </div>
+          <NoticeMain title='공지 알립니다!' date='2023.01.16' content='어쩌구 저쩌구'/>
+          <NoticeMain title='서비스 점검 안내사항' date='2023.01.07' content='어쩌구 저쩌구' />
+          <NoticeMain title='CEO 사퇴' date='2023.01.01' content='어쩌구 저쩌구' />
+          <NoticeMain title='이벤트 안내' date='2022.12.31' content='어쩌구 저쩌구' />
+          <NoticeMain title='시설 업데이트' date='2014.04.19' content='어쩌구 저쩌구' />
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Notice
+export default Notice;
